@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Dante's Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="cover.css" rel="stylesheet">
+    <link href="experience.css" rel="stylesheet">
+    <link rel="icon" href="media/skate-icon.png" sizes="32x32" type="image/png">
+    <a href="#experience-section" class="skip">Skip to main content</a>
+</head>
+
+<body class="text-bg-dark">
+
+<div class="container-fluid">
+    <div class="row align-items-start">
+        <!-- Left Side Images -->
+        <div class="col-lg-3 p-4 d-none d-lg-block">
+            <figure class="side-image-container">
+                <img src="media/berlin.webp" alt="" class="side-image">
+                <figcaption class="caption">Brandenburg Gate, Berlin</figcaption>
+            </figure>
+            <figure class="side-image-container">
+                <img src="media/AndorTeufelsberg.webp" alt="" class="side-image">
+                <figcaption class="caption">Painting of Andor in Teufelsberg, a Former West Berlin CIA Listening Station.</figcaption>
+            </figure>
+            <figure class="side-image-container">
+                <img src="media/petco.webp" alt="" class="side-image">
+                <figcaption class="caption">Nosebleeds at Petco Park. Home of the San Diego Padres.</figcaption>
+            </figure>
+        </div>
+        <!-- Left Side Images End -->
+        <!-- Navbar Start -->
+        <div class="col-12 col-lg-6">
+            <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+                <div id="navbar-placeholder"></div>
+
+                <script>
+                    fetch('navbar.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('navbar-placeholder').innerHTML = data;
+                        });
+                </script>
+                <!-- Navbar End -->
+
+                <!-- Work Experience Start -->
+                <section class="experience-section">
+                    <div class="container">
+                        <h2 class="section-title">Work Experience</h2>
+
+                        <div class="experience-item">
+                            <div class="row align-items-center">
+                                <img src="media/daphne.webp" alt="Daphne Logo" class="experience-img mb-3">
+                                <div class="experience-content">
+                                    <h3>DAPHNE - Open Source Data Analysis Language</h3>
+                                    <p class="position">Berlin, Germany</p>
+                                    <p class="date">March 2025 - August 2025</p>
+                                    <p>
+                                        During my time abroad at Technical University Berlin, I worked on the development of a data analysis pipeline
+                                        called Daphne. Daphne is a custom domain-specific language (DSL) for large-scale data analysis.<br>
+                                        <br>
+                                        My contributions involved extending the capabilities of the DaphneDSL to make the platform more accessible to different data analysis use cases.
+                                        I converted data structures coded in high-level languages to be compatible with DaphneDSL. As it is still a prototype language, I had to modify algorithms to work in DaphneDSL's constraints.
+                                        Whenever the language was missing a crucial data structure for an algorithm, I would extend the languages functionality by making additions to its open source repo.
+                                        Specifically, using C++, I enhanced core data structure functionality by extending list objects to support the insertion and deletion of matrices of varying sizes,
+                                        which improved the language's flexibility for complex data manipulation.<br>
+                                        <br>
+                                        As this is a public open source project, I had to make sure that the changes I made were compatible with the existing codebase.
+                                        This included creating unit tests, writing documentation, and writing detailed descriptions for my pull requests to ensure that the features I added were not breaking any existing functionality and that other developers could easily understand the changes I made.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="row align-items-center">
+                                <img src="media/ucCrop.png" alt=" University of California Office of the President Logo" class="experience-img mb-3">
+                                <div class="experience-content">
+                                    <h3>UC Online - Automated Frontend UI Testing</h3>
+                                    <p class="position">University of California Office of the President—California</p>
+                                    <p class="date">June 2024 - September 2024</p>
+                                    <p>
+                                        As a Software Developer Intern with the University of California Office of the President, I was tasked with reviving and expanding the automated front-end UI testing suite for the UC Online platform.
+                                        Working in an agile environment and using Jira to manage tasks, I developed automated regression tests with Python, Selenium, and Pytest.
+                                        These tests verified that essential functions—such as user login, course creation, and student enrollment—remained fully operational on the Salesforce-backed platform after any updates.<br><br>
+
+                                        When I began my internship, the test suite had been non-functional for three years, accumulating significant technical debt.
+                                        My primary objective was to first resolve these foundational issues before adding new tests. I refactored the entire codebase to be more flexible and resilient, ensuring it would not break with minor, unexpected changes to the Salesforce website's HTML.
+                                        This process included optimizing the class structure with object inheritance, which not only eliminated the technical debt but also reduced the codebase by 60%. <br><br>
+
+                                        Throughout the project, I followed a test plan created by my manager, meeting with him frequently to address constraints and modify our strategy.
+                                        A key focus of my work was ensuring the long-term maintainability of the test suite.
+                                        To achieve this, I wrote extensive documentation for the code and processes, making it easy for future developers to use, understand, and extend the test suite long after my internship concluded.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Work Experience End -->
+
+                <!-- Project Experience Start -->
+                <section class="experience-section">
+                    <div class="container">
+                        <h2 class="section-title">Projects</h2>
+
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3><a href="media/LLM_Paper.pdf" target="_blank">LLM Translation
+                                            Paper - TU Berlin</a></h3>
+                                        <p class="position">Technologies: Python, Huggingface, CodeCarbon</p>
+                                    </div>
+                                    <p class="date">2025</p>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Conducted a comparative analysis of 5 Large Language Models (LLMs), including Llama 3.1 and NLLB, to evaluate their performance, accuracy, and efficiency in translating 7 high- and low-resource language pairs.</li>
+                                    <li>Engineered a Python testing pipeline to automate the evaluation process, measuring translation accuracy with BLEU and BERT Scores, and tracking performance metrics like response latency and energy consumption using codeCarbon.</li>
+                                    <li>Demonstrated that for high-resource languages, specialized translation LLMs (NLLB) are significantly more efficient, using only a fraction of the energy while achieving comparable accuracy to larger, general-purpose models like Llama 3.1 8B.</li>
+                                    <li>Identified the limitations of current models in translating low-resource languages, with the top-performing model achieving only a 10% BLEU score, and concluded that BERT Score is an unreliable metric for languages with sparse training data.</li>
+                                    <li>Presented the research methodology, key findings, and conclusions to an audience of international peers and instructors.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3>Movie Database Web App</h3>
+                                        <p class="position">Technologies: Java, MySQL, RESTful APIs, JavaScript, Apache, AWS</p>
+                                    </div>
+                                    <p class="date">2025</p>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Built full stack architecture from scratch. Set up an AWS EC2 instance, Apache Tomcat, and imported a large database of movie information to a MySQL database.</li>
+                                    <li>Implemented a frontend using JavaScript, jQuery, and ajax.</li>
+                                    <li>Developed an ETL pipeline to parse large XML files to augment the database.</li>
+                                    <li>Comprised ~20 medium features. e.g., fully functional website that displays a catalog of thousands of movies,
+                                        cart checkout backed by sessions, secure login using SHA256 hashing and sessions,
+                                        full-text search and auto-complete backed by a cache, bot detection using reCAPTCHA,
+                                        protection against SQL injection attacks via PreparedStatements, etc.</li>
+                                    <li>Deployed Containerized version of the project on a Kubernetes cluster spanning multiple AWS instances</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3>UC Irvine Search Engine</h3>
+                                        <p class="position">Technologies: Python, MongoDB, Django, HTML, CSS, JavaScript</p>
+                                    </div>
+                                    <p class="date">2024</p>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Programmed a web crawler to analyze 200K+ UCI websites, capable of detecting crawler traps.</li>
+                                    <li>Designed a MongoDB pipeline capable of inserting over 1 million documents with efficient query retrieval in seconds.</li>
+                                    <li>Implemented a query search engine with page ranking algorithms, tokenization, and indexing to categorize search results.</li>
+                                    <li>Planned and structured the project into actionable tasks, allowing for simultaneous development with partner.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3>Baseball Statistical Analysis</h3>
+                                        <p class="position">Technologies: Python, Pandas, PostgreSQL, Django</p>
+                                    </div>
+                                    <p class="date">2024</p>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Developed a Python app to evaluate the cost-efficiency of MLB teams relative to player salary and performance.</li>
+                                    <li>Scraped and analyzed 15,000 data points of contracts and player statistics from baseball websites with pandas.</li>
+                                    <li>Created a pipeline to take in the scraped data and clean it to clear inconsistencies. e.g., traded players or players with identical names (father and son)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-content">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap">
+                                    <div>
+                                        <h3>SF Hackathon – Application</h3>
+                                        <p class="position">Technologies: Javascript, React, MongoDB, Neurelo, REST API</p>
+                                    </div>
+                                    <p class="date">2024</p>
+                                </div>
+                                <ul class="mt-3">
+                                    <li>Developed “Metro Ventures”, a mobile web scavenger hunt application, using JavaScript and React.</li>
+                                    <li>Implemented backend solutions with Neurelo and MongoDB as a REST API to manage and store interactive route data.</li>
+                                    <li>Led a team of four to define and visualize the application design, resulting in a functional prototype.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Project Experience Start -->
+
+                <footer class="mt-5 text-white-50 text-center py-4">
+                    <p>© 2025 Dante Villalobos Industries. All rights reserved.</p>
+                </footer>
+            </div>
+        </div>
+        <!-- Right Side Images Start -->
+        <div class="col-lg-3 p-4 d-none d-lg-block">
+            <figure class="side-image-container">
+                <img src="media/AOT.webp" alt="" class="side-image">
+                <figcaption class="caption">Nördlingen, Germany. Inspiration for Attack on Titan.</figcaption>
+            </figure>
+            <figure class="side-image-container">
+                <img src="media/Imola.webp" alt="" class="side-image">
+                <figcaption class="caption">Sitting P3 at the 2025 Formula 1 Imola Grand Prix.</figcaption>
+            </figure>
+        </div>
+        <!-- Right Side Images End -->
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
