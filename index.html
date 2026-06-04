@@ -10,11 +10,11 @@ Template for this page is the bootstrap cover page example.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="Portfolio of Dante Villalobos, Computer Science graduate from UC Irvine. Specializing in Intelligent Systems and software engineering.">
+    <meta name="author" content="Dante Villalobos">
     <meta name="generator" content="Astro v5.13.2">
     <title>Dante's Site</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+    <link rel="canonical" href="https://dantevlobos.github.io/">
     <script src="/docs/5.3/assets/js/color-modes.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -23,8 +23,40 @@ Template for this page is the bootstrap cover page example.
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dantevlobos.github.io/">
+    <meta property="og:title" content="Dante's Site">
+    <meta property="og:description" content="Portfolio of Dante Villalobos, Computer Science graduate from UC Irvine. Specializing in Intelligent Systems and software engineering.">
+    <meta property="og:image" content="https://dantevlobos.github.io/media/skateboard_graduation_photo.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dantevlobos.github.io/">
+    <meta property="twitter:title" content="Dante's Site">
+    <meta property="twitter:description" content="Portfolio of Dante Villalobos, Computer Science graduate from UC Irvine. Specializing in Intelligent Systems and software engineering.">
+    <meta property="twitter:image" content="https://dantevlobos.github.io/media/skateboard_graduation_photo.webp">
+
     <link href="cover.css" rel="stylesheet">
 
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dante Villalobos",
+      "url": "https://dantevlobos.github.io/",
+      "image": "https://dantevlobos.github.io/media/skateboard_graduation_photo.webp",
+      "jobTitle": "Software Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Irvine"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/dantepvillalobos/"
+      ]
+    }
+    </script>
 </head>
 
 <body class="d-flex h-100 text-center text-bg-dark">
