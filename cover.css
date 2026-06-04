@@ -8,17 +8,29 @@ EMAIL: dpvillal@uci.edu
 Template for this page is the bootstrap cover page example.
 */
 
-/* Video Background */
-#background-video {
+/* Background Image */
+#background-image {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
     object-fit: cover;
+    object-position: center;
+}
+
+/* Background Overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+    pointer-events: none;
 }
 
 
@@ -168,3 +180,28 @@ main .lead {
             0 0 8px rgba(0, 0, 0, 0.8);
 }
 /* Text border for enhanced readability of main text*/
+
+/* Fade In Up Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
